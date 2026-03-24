@@ -51,13 +51,7 @@
                 Exporter
               </button>
 
-              <button @click="speakText" :disabled="isSpeaking" class="flex items-center gap-2 px-4 py-2.5 bg-white border border-slate-300 text-slate-700 hover:bg-emerald-50 rounded-lg font-black text-[9px] uppercase tracking-widest transition-all shadow-sm disabled:opacity-50">
-                <svg v-if="!isSpeaking" class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
-                </svg>
-                <span v-else class="w-2.5 h-2.5 bg-emerald-600 rounded-full animate-ping"></span>
-                {{ isSpeaking ? 'Famakiana...' : 'Ecouter' }}
-              </button>
+            
 
               <button @click="check" :disabled="isAnalyzing" class="px-8 py-3 bg-slate-900 text-white font-black hover:bg-red-600 transition-all disabled:opacity-50 ml-2 shadow-lg shadow-slate-200">
                 <span v-if="!isAnalyzing" class="uppercase text-xs tracking-widest">Analyser</span>
